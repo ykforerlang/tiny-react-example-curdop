@@ -19,9 +19,11 @@ export default () => (
             <Link to="/" >首页</Link>
         </div>
         <Route exact path="/" render={homeRender}/>
-        <Route exact path="/tiny-react-example-curdop/index.html" render={homeRender}/>
         <Route path="/profile" component={Profile}/>
         <Route path="/react" component={ReactPage}/>
+
+        {/* for git page*/}
+        <Route exact path="/tiny-react-example-curdop" render={homeRender}/>
     </div>
 )
 
