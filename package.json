@@ -1,0 +1,29 @@
+{
+  "name": "renderVDOM",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config ./webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "~6.25.0",
+    "babel-loader": "~7.1.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "webpack": "^3.0.0"
+  },
+  "dependencies": {
+    "rc-menu": "^6.2.5",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "tinyy-router": "^1.0.1",
+    "treact-tredux": "^1.0.0"
+  }
+}

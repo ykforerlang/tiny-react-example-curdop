@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .header {
+            background: #8becff;
+            display: inline-block;
+            line-height: 64px;
+            height: 64px;
+            width: 100%;
+        }
+
+        .header a {
+            display: block;
+            float: right;
+            margin-right: 20px;
+            cursor: pointer;
+            color: gray;
+        }
+
+        .header a:hover {
+            text-underline: none;
+            color: black;
+            text-decoration: underline;
+        }
+
+        .profile {
+            position: relative;
+        }
+
+        .profile ul {
+            list-style-type: none;
+            height: 800px;
+            background: #b5ffe9;
+            width: 150px;
+        }
+
+        .profile ul li {
+            height: 29px;
+            padding-top: 20px;
+            margin-left: -39px;
+            text-align: center;
+            color: gray;
+        }
+
+        .profile ul li:hover {
+            color: black;
+            cursor: pointer;
+        }
+
+        .profile .content {
+            position: absolute;
+            top: 0;
+            left: 200px;
+        }
+
+    </style>
+</head>
+<body>
+   <div id="root"></div>
+</body>
+<script src="./build/index.js"></script>
+</html>
