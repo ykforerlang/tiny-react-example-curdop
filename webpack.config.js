@@ -1,5 +1,6 @@
 var path = require('path');
 var rootPath = path.resolve(__dirname)
+var webpack = require('webpack')
 module.exports = {
 	entry: {
 		index: './src/index.js'
@@ -16,5 +17,18 @@ module.exports = {
                 exclude: /node_modules/
 			}
 		]
-	}
+	},
+    plugins: [
+        new webpack.DefinePlugin({
+            'process.env': {
+                'NODE_ENV': '"production"'
+            }
+        }),
+        new webpack.optimize.UglifyJsPlugin({
+            compressor: {
+                warnings: false
+            },
+            minimize: true
+        }),
+    ]
 };
